@@ -27,9 +27,9 @@ var oldPrice = standardPrice - ((standardPrice / 100) *40);
 var salePrice = document.getElementById("sale_price");
 
 if (age < 18){
-    salePrice.innerHTML = "Dato che hai meno di 18 anni il prezzo del tuo biglietto è " + youngPrice + "!"
+    salePrice.innerHTML = "Dato che hai meno di 18 anni il prezzo del tuo biglietto è di € " + youngPrice.toFixed(2) + " !"
 } else if (age > 65 ){
-    salePrice.innerHTML = "Dato che hai più di 65 anni il prezzo del tuo biglietto è " + oldPrice + "!"
+    salePrice.innerHTML = "Dato che hai più di 65 anni il prezzo del tuo biglietto è di € " + oldPrice.toFixed(2) + " !"
 } else {
     salePrice.innerHTML = "Mi dispiace ma non abbiamo una promozione attiva in questo momento per te"
 };
